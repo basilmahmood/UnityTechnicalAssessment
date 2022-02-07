@@ -1,4 +1,4 @@
-import mongoose from 'mongoose'
+import mongoose from 'mongoose';
 
 const ImageSchema = new mongoose.Schema({
   id: { type: String, required: true },
@@ -24,4 +24,4 @@ const GameListingSchema = new mongoose.Schema({
 
 const GameListing = mongoose.model('GameListing', GameListingSchema);
 
-export default GameListing
+export default GameListing;

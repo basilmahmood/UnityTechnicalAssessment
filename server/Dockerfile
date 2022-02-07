@@ -6,7 +6,7 @@ COPY package.json ./
 COPY package-lock.json ./
 RUN npm ci
 
-COPY ./build ./
+COPY ./dist ./
 
 EXPOSE 3000
 
