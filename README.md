@@ -1,18 +1,15 @@
 # Unity Technical Assessment
 The code for this project resides here
 
-# Setup for Database
-You will need to have a mongodb instance setup prior. The setup is fairly easy if you are using Mongo Atlass (the cloud version), just follow the instructions on the mongo website. You can also alternatively setup a local instance, althought it is a bit longer process.
+# Setup for Local Database
+1. Install docker (skip if already installed)
+2. Run `docker run --name some-mongo -p 27017:27017 -d mongo:latest`. This will start a local mongo instance available at `localhost:27017` that the local server will automatically access.
+3. If you want to access the DB values yourself without going through the server, you can download `MongoDB Compass` locally and connect to `mongodb://localhost:27017`
 
 # Setup For Local Server
 1. Clone this repository with `git clone https://github.com/basilmahmood/UnityTechnicalAssessment.git`
 2. Install [node.js](https://nodejs.org/en/) on your local machine (skip if already done)
 3. Install the node packages by running `npm install` (inside the `server` folder)
-4. Setup your local environment variables by creating a file called `.env` (inside the `server` folder). The following variables are needed to connect to the database (their names are self explanitory):
-  - DB_HOST
-  - DB_NAME
-  - DB_USER
-  - DB_PASS
 5. Run `npm start` in your command line (inside the `server` folder) to run the server
 
 # Building for deployment
