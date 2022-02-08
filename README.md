@@ -15,4 +15,4 @@ The code for this project resides here
 # Building for deployment
 1. Run `npm run build` inside the `server` folder
 2. Run `docker build -t unity-assessment-basil ./`
-3. You can deploy this container to wherever you want, to run it locally you can do `docker run -p 3000:3000 --env-file .env unity-assessment-basil`
+3. You can deploy this container to wherever you want, to run it locally you can do `docker run -p 3000:3000 unity-assessment-basil`
